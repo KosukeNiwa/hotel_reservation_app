@@ -11,6 +11,27 @@
   </head>
 
   <body>
+    <header>
+      <div class="header-logo">
+        <a href="#"><img src="https://presite-potepancamp-rails-02.herokuapp.com/assets/logo.png" alt="Pote Share"></a>
+      </div>
+      <div class="header-list">
+        <ul>
+          <li>
+            <%= link_to "ログイン", user_session_path, {class: "header-btn sign_in"} %>
+          </li>
+          <li>
+            <%= link_to "登録する", new_user_registration_path, {class: "header-btn sign_up"} %>
+          </li>
+        </ul>
+      </div>
+    </header>
+      
     <%= yield %>
+
+    <footer>
+      <p>©️ 2022 POTEPAN.INC.</p>
+    </footer>
+
   </body>
 </html>

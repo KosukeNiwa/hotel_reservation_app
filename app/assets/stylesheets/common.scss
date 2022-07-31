@@ -1,0 +1,58 @@
+/* 共通レイアウト */
+header, footer {
+    background-color: #000000;
+    width: 100%;
+}
+
+header {
+    height: 70px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    float: left;
+    padding-left: 20px;
+}
+
+.header-list {
+    float: right;
+    height: 90%;
+}
+
+.header-list li {
+    float: left;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.header-btn {
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    
+}
+
+.sign_in{
+    background-color: #4a90e2;
+}
+
+.sign_up{
+    background-color: #6c757d;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+
+}

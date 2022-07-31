@@ -1,0 +1,39 @@
+<%= form_with model: @room do |f| %>    
+    <table>
+        <tr>ルーム情報登録</tr>
+        <tr>
+            <th><%= f.label :room_name, "ルーム名" %></th>
+            <td><%= f.text_field :room_name, placeholder: "ルーム名を入力" %></td>
+        </tr>
+        <tr>
+            <th><%= f.label :room_introduction, "ルーム紹介" %></th>
+            <td><%= f.text_area :room_introduction, placeholder: "ルーム説明を入力" %></td>
+        </tr>
+        <tr>
+            <th><%= f.label :room_charge, "ルーム料金" %></th>
+            <td><%= f.number_field :room_charge, placeholder: "1日あたりの料金を入力" %></td>
+        </tr>
+        <tr>
+            <th><%= f.label :room_address ,"住所" %></th>
+            <td><%= f.text_field :room_address, placeholder: "住所を入力" %></td>
+        </tr>
+        <tr>
+            <th><%= f.label :room_pic, "ルーム画像" %></th>
+            <td><%= f.file_field :room_pic %></td>
+        </tr>
+    </table>
+
+    <div>
+        <ul>
+            <li><%= f.submit "登録" %></li>
+        </ul>
+    </div>
+
+<% end %>
+
+
+
+
+
+
+
